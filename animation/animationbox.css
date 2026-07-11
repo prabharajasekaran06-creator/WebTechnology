@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right top, red , black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    animation: makeround 4s ease-in-out alternate infinite;
+    
+}
+.box{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+    animation: roll 2s ease-in alternate infinite;
+    
+   
+}
+
+@keyframes roll {
+    0%{
+       transform: translate(0,0,);
+       background-color: yellow;
+    }
+    25%{
+        transform: translate(300px, 0);
+        background-color: red;
+    }
+    50%{
+        transform: translate(300px,300px);
+        background-color: blue;
+    }
+    75%{
+        transform: translate(0,300px);
+        border-color: rgb(203, 159, 159);
+    }
+}
+
+@Keyframes makeround{
+    0%{
+transform:rotate(0deg) ;
+    }
+    75%{
+transform: rotate(360deg);
+    }
+}
+

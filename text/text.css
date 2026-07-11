@@ -1,0 +1,16 @@
+.header>h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: red;
+    text-shadow: -3px -3px 2px black;
+
+}
+
+.header>p{
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 20px;
+    text-indent: 100px;
+    line-height: 30px;
+
+}

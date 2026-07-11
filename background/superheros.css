@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+section>h1{
+    font-size: 90px;
+    color: rgb(236, 230, 219);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 4px 5px red;
+    
+}
+
+#s1{
+    background-image: url(https://wallpapers.com/images/featured/iron-man-ouqxo5w2b59h0042.jpg);
+    background-size: cover;
+    background-position: top;
+
+}
+
+#s2{
+    background-image: url(https://www.baltana.com/files/wallpapers-14/Captain-America-Desktop-HD-Wallpaper-37881.jpg);
+    background-size: cover;
+    background-position: top;
+    
+}
+#s3{
+    background-image: url(https://images7.alphacoders.com/398/thumb-1920-398010.jpg );
+    background-size: cover;
+    background-position: top;
+    
+}
+#s4{
+    background-image: url(https://wallpapersok.com/images/hd/4k-hulk-raging-anger-9y8xj0yb1kdy0ssy.jpg);
+    background-size: cover;
+    background-position: top;
+    
+}
+#s5{
+    background-image: url(https://images.alphacoders.com/139/thumb-1920-1393392.jpg);
+    background-size: cover;
+    background-position: top;
+    
+}
+
+

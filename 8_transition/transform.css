@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0px;
+}
+
+main{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+main> .box{
+    height: 100px;
+    width: 100px;
+   
+}
+
+main> #b1{
+    background-color: red;
+    transition: all 1s ease-in-out;
+}
+
+main> #b2{
+    background-color: blue;
+    transition: all 1s ease-in-out;
+
+}
+
+main> #b3{
+    background-color: green;
+    transition: all 1s ease-in-out;
+}
+
+main> #b4{
+    background-color: yellow;
+    transition: all 1s ease-in-out;
+}
+
+#b1:hover{
+    transform: scale(2);
+    box-shadow: 0px 4px 6px rgb(199, 111, 111);
+}
+#b2:hover{
+
+    transform: rotate(90deg);
+    /* transform: scale(2);
+    box-shadow: 0px 4px 6px rgb(116, 116, 202); */
+
+}
+#b3:hover{
+
+    /* transform: translateX(200px) */
+    /* transform: translateY(200px) */
+    transform: translate(100px, -100px);
+    /* transform: scale(2);
+    box-shadow: 0px 4px 6px rgb(96, 186, 96); */
+
+}
+#b4:hover{
+    transform: skew(45deg);
+    /* transform: scale(2);
+    box-shadow: 0px 4px 6px rgb(215, 215, 89); */
+
+}

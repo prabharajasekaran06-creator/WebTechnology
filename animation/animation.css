@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer1{
+    height: 100vh;
+    background: linear-gradient(red, blue);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* gap: 100px; */
+}
+.outer2{
+    height: 100vh;
+    background: linear-gradient(rgb(170, 230, 183), blue);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* gap: 100px; */
+}
+.outer1>.left{
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    border-radius: 50%;
+    animation: boxrotate 2s linear infinite;
+}
+
+.outer1>.right{
+    height: 400px;
+    width: 400px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.left>.box1{
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+    animation: changecolor 0.5s ease-in infinite alternate;
+    
+}
+
+.right>.box2{
+    height: 200px;
+    width: 200px;
+    border-top: 4px solid;
+    border-bottom:4px solid ;
+    border-color: rgb(10, 146, 10);
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes changecolor {
+    from{
+       background-color: red;
+    }
+    to{
+        background-color: black;
+    }
+}
+
+@keyframes rotate {
+  
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes boxrotate {
+
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+
+        transform: rotate(360deg);
+    }
+    
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+    h1{
+    padding: 40px 70px;
+    text-transform: capitalize;
+    color: rgb(153, 108, 196);
+    border-radius: 20px;
+    text-shadow: 2px 4px 8px rgb(199, 184, 214);
+       
+    }
+
+    button{
+        color: rgb(168, 40, 40);
+        background-color: burlywood;
+        font-size: 50px;
+        font-weight: bold;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 20px;
+        box-shadow: 2px 4px 0px rgb(135, 109, 109);
+        border: none;
+        
+    }
+    a{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        
+    }
+
+    .container{
+        background-color: black;
+        width: 400px;
+        height: 400px;
+        color: white;
+        border-radius: 40px;
+        box-shadow: 2px 4px 8px black;
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        flex-direction: column;
+
+    }
+
+    button:hover{
+        background-color: rgb(154, 151, 151);
+        color: black;
+        font-size: 55px;
+    }
+
+</style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Conquer Victory</h1><br>
+    <button onclick="getStudents()">Show Students</button>
+    <a href="register.html">Register!</a>
+
+
+    </div>
+    
+
+
+
+    <script> 
+    function getStudents(){
+
+        fetch("http://localhost:8080/students")  //API ENDPOINT
+         .then((response) => response.json())   //JSON CONVERSION
+         .then((data) => console.log(data));    // LOGGING THE DATA
+    }
+    
+       
+    </script>
+
+</body>
+</html>
