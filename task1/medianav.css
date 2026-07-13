@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+@media (max-width:425px){
+    body{
+        background-color: blue;
+    }
+    h1{
+        color: red;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:426px) and (max-width:726px){
+    body{
+        background-color: hotpink;
+    }
+      h1{
+        color: rgb(44, 123, 150);
+        font-size: 3rem;
+    }
+}
+
+@media print{
+    h1{
+        color: pink;
+        font-size: 4rem;
+    }
+}
