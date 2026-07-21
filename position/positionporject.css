@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right, rgb(94, 7, 94), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    height: 70%;
+    width: 35% ;
+    border-radius: 30px;
+    background: linear-gradient(to right, orangered, yellow);
+    position: relative;
+}
+.inner>img{
+    position: absolute;
+}
+.inner>#img1{
+    height: 350px;
+    bottom: 30px;
+    left: 40px;
+
+}
+
+.inner>#img2{
+    height: 350px;
+    bottom: 30px;
+    
+}
+
+.inner>#img3{
+    height: 100px;
+    bottom: 10px;
+    
+}
+
+
